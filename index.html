@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Applan | App Landing Page</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- CSS Stylesheet for Responsive Layout -->
+    <link rel="stylesheet" href="./css/phone.css">
+
+    <!-- Fonts Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Glide.js Stylesheet -->
+    <link rel="stylesheet" href="./css/glide.core.min.css">
+
+    <link rel="stylesheet" href="./css/glide.theme.min.css">
+
+</head>
+
+<body>
+
+    <!-- Contact Form Pop-up -->
+
+    <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+            <div class="close-btn" onclick="togglePopup()">&times;</div>
+            <h1>Write your info...</h1>
+
+            <form action="" method="post">
+
+                <input type="text" name="name" id="name" placeholder="Your name" required>
+
+                <input type="email" name="email" id="Cemail" placeholder="Your email" required>
+
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Your message"
+                    required></textarea>
+
+                <input type="submit" value="SEND MESSAGE">
+            </form>
+        </div>
+    </div>
+    <div class="contact-form-btn">
+        <a onclick="togglePopup()"><i class="fa-solid fa-envelope fa-lg"></i></a>
+    </div>
+
+
+    <!-- Navigation Bar -->
+
+    <header id="header" class="navbar-fixed-top">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Applan" width="100%" height="100%">
+        </div>
+        <div class="burger">
+            <button onclick="toggleNavbar();">
+                <img src="./images/bars.png" alt="" width="100%" height="100%">
+            </button>
+        </div>
+        <nav class="navbar" id="navbar">
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#screenshots">Screenshots</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#footer">Download</a></li>
+                <li><a onclick="togglePopup();">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+
+    <div class="hero-section">
+        <div class="hero-text" data-aos="fade-right">
+            <h1>Present your app with applan</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime reprehenderit vel consequuntur aspernatur
+                delectus.</p>
+            <div class="btn">
+                <a href="#footer"><i class="fa-solid fa-cloud-arrow-down"></i> DOWNLOAD APP</a>
+            </div>
+        </div>
+
+        <div class="hero-img" data-aos="fade-down">
+            <img src="./images/phone.png" alt="" width="100%" height="100%">
+        </div>
+    </div>
+
+
+    <!-- Scroll-down Arrow -->
+
+    <div id="scroll-down" style="display: block;">
+        <a title="Click to down" href="#about">
+            <span></span>
+        </a>
+    </div>
+
+    <!-- About Section -->
+
+    <div class="about-section" id="about" data-aos="fade-up">
+        <h1>App about part <br> keep here</h1>
+        <div class="about-container">
+            <div class="about-box">
+                <div class="box-img" id="box-img-1">
+                    <i class="fa-solid fa-flag fa-lg"></i>
+                </div>
+                <div class="box-text">
+                    <p>Lorem ipsum dolor sit <br> amet consectetur.</p>
+                </div>
+            </div>
+            <div class="about-box">
+                <div class="box-img" id="box-img-2">
+                    <i class="fa-solid fa-folder fa-lg"></i>
+                </div>
+                <div class="box-text">
+                    <p>Lorem ipsum dolor sit <br> amet consectetur.</p>
+                </div>
+            </div>
+            <div class="about-box">
+                <div class="box-img" id="box-img-3">
+                    <i class="fa-solid fa-cart-shopping fa-lg"></i>
+                </div>
+                <div class="box-text">
+                    <p>Lorem ipsum dolor sit <br> amet consectetur.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Why Section -->
+
+    <div class="why-section" id="why">
+        <div class="why-section-image" data-aos="fade-right">
+            <img src="./images/phone-1.png" alt="phone-image" width="100%" height="100%">
+        </div>
+
+        <div class="why-section-text" data-aos="fade-left">
+            <h1>Explain why it's <br> best in the world</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat.</p>
+            <ul>
+                <li><i class="fa-solid fa-circle-check"></i> Lorem ipsum dolor sit amet consectetur.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                </li>
+                <li><i class="fa-solid fa-circle-check"></i> Lorem ipsum dolor sit amet.</li>
+            </ul>
+            <div class="why-section-text-btn">
+                <a onclick="togglePopup();"><i class="fa-solid fa-file-signature"></i> CONTACT US</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+
+    <div class="features-section" id="features">
+        <div class="features">
+            <div class="feature-box" data-aos="fade-up">
+                <div class="feature-image">
+                    <img src="./images/feature-icon-1.png" alt="feature-icon-1" width="100%" height="100%">
+                </div>
+                <div class="feature-text">
+                    <h3>BEAUTIFUL DESIGN</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="feature-box" data-aos="fade-up">
+                <div class="feature-image">
+                    <img src="./images/feature-icon-2.png" alt="feature-icon-1" width="100%" height="100%">
+                </div>
+                <div class="feature-text">
+                    <h3>WOW ANIMATION</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="feature-box" data-aos="fade-up">
+                <div class="feature-image">
+                    <img src="./images/feature-icon-3.png" alt="feature-icon-1" width="100%" height="100%">
+                </div>
+                <div class="feature-text">
+                    <h3>PURE AND SIMPLE</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="feature-box" data-aos="fade-up">
+                <div class="feature-image">
+                    <img src="./images/feature-icon-4.png" alt="feature-icon-1" width="100%" height="100%">
+                </div>
+                <div class="feature-text">
+                    <h3>EASY CUSTOMIZE</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="feature-section-image" data-aos="fade-lrft">
+            <img src="./images/phone-2.png" alt="" width="100%" height="100%">
+        </div>
+    </div>
+
+    <!-- Video Presentation Section -->
+
+    <div class="video-presentation-section" id="presentation">
+        <div class="text" data-aos="fade-up">
+            <h1>Video Presentation</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, iusto.</p>
+        </div>
+
+        <div class="video-bg"  data-aos="fade-up">
+            <img src="./images/phone-3.png" alt="" width="100%" height="100%">
+            <div class="popup-2" id="popup-2">
+                <div class="overlay"></div>
+                <div class="content">
+                    .
+                    <div class="close-btn" onclick="toggleVideo()">&times;</div>
+                    <video width="80%" height="314" controls>
+                        <source src="./images/What is an app_.mp4">
+                    </video>
+                    <!-- <iframe width="80%" height="314" src="https://www.youtube.com/embed/21mpGLef_jY" title="What is an app?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                </div>
+            </div>
+            <div class="video-btn">
+                <a onclick="toggleVideo()"><i class="fa-solid fa-play fa-lg"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Testimonials Section -->
+
+    <div class="testimonials-section" id="reviews">
+        <h1 data-aos="fade-up">What our customers said</h1>
+        <div class="glide" data-aos="fade-up">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li class="glide__slide">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium ea
+                                doloribus voluptatibus, illo tenetur tempore minus cum, nihil consequatur voluptatem
+                                laudantium adipisci repellendus, debitis ratione quibusdam.</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span> - MAHBUB UDDIN</span> <br>
+                            <span>TEACHER, ALAMPUR</span>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium ea
+                                doloribus voluptatibus, illo tenetur tempore minus cum, nihil consequatur voluptatem
+                                laudantium adipisci repellendus, debitis ratione quibusdam.</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span> - Name2</span> <br>
+                            <span>Profession</span>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium ea
+                                doloribus voluptatibus, illo tenetur tempore minus cum, nihil consequatur voluptatem
+                                laudantium adipisci repellendus, debitis ratione quibusdam.</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span> - Name3</span> <br>
+                            <span>Profession</span>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium ea
+                                doloribus voluptatibus, illo tenetur tempore minus cum, nihil consequatur voluptatem
+                                laudantium adipisci repellendus, debitis ratione quibusdam.</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span> - Name4</span> <br>
+                            <span>Profession</span>
+                        </div>
+                    </li>
+                    <li class="glide__slide">
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum praesentium ea
+                                doloribus voluptatibus, illo tenetur tempore minus cum, nihil consequatur voluptatem
+                                laudantium adipisci repellendus, debitis ratione quibusdam.</p>
+                        </div>
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span> - Name5</span> <br>
+                            <span>Profession</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+                <button class="glide__bullet" data-glide-dir="=3"></button>
+                <button class="glide__bullet" data-glide-dir="=4"></button>
+                <!-- <img class="glide__bullet" data-glide-dir="=0" src="./images/1.png" width="100%" height="100%">
+            <img class="glide__bullet" data-glide-dir="=1" src="./images/2.png" width="100%" height="100%">
+            <img class="glide__bullet" data-glide-dir="=2" src="./images/3.png" width="100%" height="100%">
+            <img class="glide__bullet" data-glide-dir="=3" src="./images/4.png" width="100%" height="100%">
+            <img class="glide__bullet" data-glide-dir="=4" src="./images/5.png" width="100%" height="100%"> -->
+            </div>
+
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                    <i class="fa-solid fa-angle-left fa-2x"></i>
+                </button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                    <i class="fa-solid fa-angle-right fa-2x"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Plans Section -->
+
+    <div class="plans-section" id="plans">
+        <div class="text" data-aos="fade-up">
+            <h1>Affordable Price</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br> Totam, voluptatem, enim voluptas,
+                doloremque dolores expedita itaque similique alias</p>
+        </div>
+
+        <div class="plans-container">
+            <div class="plan" data-aos="fade-up">
+                <div class="head">
+                    <span>Basic</span>
+                    <span>$25</span>
+                </div>
+                <div class="body">
+                    <ul>
+                        <li>One User</li>
+                        <li>1000 ui elements</li>
+                        <li>Web Mail Support</li>
+                        <li>100GB Cloud Storage</li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <a href="#none">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="plan" data-aos="fade-up">
+                <div class="head">
+                    <span>Business</span>
+                    <span>$63</span>
+                </div>
+                <div class="body">
+                    <ul>
+                        <li>One User</li>
+                        <li>1000 ui elements</li>
+                        <li>Web Mail Support</li>
+                        <li>100GB Cloud Storage</li>
+                        <li>Unlimited Users Limit</li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <a href="#none">ORDER NOW</a>
+                </div>
+            </div>
+
+            <div class="plan" data-aos="fade-up">
+                <div class="head">
+                    <span>Ultimate</span>
+                    <span>$99</span>
+                </div>
+                <div class="body">
+                    <ul>
+                        <li>One User</li>
+                        <li>1000 ui elements</li>
+                        <li>Web Mail Support</li>
+                        <li>100GB Cloud Storage</li>
+                    </ul>
+                </div>
+                <div class="footer">
+                    <a href="#none">ORDER NOW</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Screenshot Section -->
+
+    <div class="screenshots-section" id="screenshots">
+        <div class="text" data-aos="fade-up">
+            <h1>Oh! app awesome screenshots</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Id animi rem ducimus doloribus
+            </p>
+        </div>
+
+        <div class="screenshot-video">
+            <video width="100%" height="100%" autoplay loop muted>
+                <source src="./images/video.mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+
+    <div class="blogs-section" id="blog">
+        <div class="heading" data-aos="fade-up">
+            <h1>Latest app blog post</h1>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus nobis<br> ab asperiores architecto
+            </p>
+        </div>
+        <div class="blogs-container">
+            <div class="blog" data-aos="fade-up">
+                <div class="blog-image">
+                    <img src="./images/blog-image-1.jpg" alt="" width="100%" height="100%">
+                </div>
+
+                <div class="blog-text">
+                    <h2>Save your time</h2>
+                    <div class="blog-stats">
+                        <span><i class="fa-solid fa-clock"></i> 31 Aug,22</span>
+                        <span><i class="fa-solid fa-comments"></i> 3 comments</span>
+                    </div>
+
+                    <div class="blog-content">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit rem amet culpa
+                    </div>
+                    <a href="#none">Continue read <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="blog" data-aos="fade-up">
+                <div class="blog-image">
+                    <img src="./images/blog-image-2.jpg" alt="" width="100%" height="100%">
+                </div>
+
+                <div class="blog-text">
+                    <h2>Save your time</h2>
+                    <div class="blog-stats">
+                        <span><i class="fa-solid fa-clock"></i> 31 Aug,22</span>
+                        <span><i class="fa-solid fa-comments"></i> 3 comments</span>
+                    </div>
+
+                    <div class="blog-content">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit rem amet culpa
+                    </div>
+                    <a href="#none">Continue read <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="blog" data-aos="fade-up">
+                <div class="blog-image">
+                    <img src="./images/blog-image-3.jpg" alt="" width="100%" height="100%">
+                </div>
+
+                <div class="blog-text">
+                    <h2>Save your time</h2>
+                    <div class="blog-stats">
+                        <span><i class="fa-solid fa-clock"></i> 31 Aug,22</span>
+                        <span><i class="fa-solid fa-comments"></i> 3 comments</span>
+                    </div>
+
+                    <div class="blog-content">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit rem amet culpa
+                    </div>
+                    <a href="#none">Continue read <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn">
+            <a href="#none"><i class="fa-solid fa-eye"></i> VIEW MORE</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+
+    <footer id="footer">
+        <div class="download-app-section" data-aos="fade-right">
+
+            <div class="text">
+                <h1>Download the app</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Laborum optio Laborum optio</p>
+            </div>
+
+            <div class="download-buttons">
+                <a href="#none"><i class="fa-brands fa-google-play fa-lg"></i> PLAY STORE</a>
+                <a href="#none"><i class="fa-brands fa-apple fa-lg"></i> APP STORE</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="#none">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100006296327263" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shahmir-ahmed-922124241/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="#none">
+                    <i class="fa-brands fa-google-plus-g"></i>
+                </a>
+                <a href="#none">
+                    <i class="fa-brands fa-pinterest-p"></i>
+                </a>
+            </div>
+
+            <div class="line"></div>
+        </div>
+
+        <div class="form-section" data-aos="fade-left">
+            <div class="text">
+                <h3>Join our newsletter</h3>
+                <p>Lorem ipsum dolor, sit amet <br> consectetur adipisicing.</p>
+                <div class="form">
+                    <form action="" method="post">
+                        <input type="email" id="email" name="email" placeholder="Your email here..." required>
+
+                        <input type="submit" value="SUBSCRIBE">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subscribed newsletter Pop-up -->
+
+        <!-- <div id="subscribed">
+            <div class="overlay"></div>
+            <div class="content">
+                <i class="fa-solid fa-check fa-2x"></i>
+                <h1>Thank you!</h1>
+                <p>Your details have been successfully submitted. Thanks!</p>
+                <p id="emailHere"></p>
+                <input type="button" value="OK" class="close-btn" onclick="pop();">
+            </div>
+        </div> -->
+
+        <div class="credits">
+            Copyright &copy; 2022 All Rights Reserved <br>
+            Proudly created by Shahmir Ahmed!
+        </div>
+    </footer>
+
+    <!-- Scroll--top Arrow -->
+
+    <div class="scroll-top" id="scroll-top" style="display: block;">
+        <a title="Click to top" href="#">
+            <span></span>
+        </a>
+    </div>
+
+    <!-- Discounted Offer Pop-up -->
+
+    <!-- <div id="popupOffer">
+        <div class="overlay"></div>
+        <div class="content">
+            <input type="button" value="&times;" class="close-btn" onclick="popUp();">
+            <h1>New Discounted Offer</h1>
+            <p>Wanna Avail?</p>
+            <a href="#none">Click here <i class="fa-brands fa-arrow"></i></a>
+        </div>
+    </div> -->
+
+    <!-- Glide.js Javascript file -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+    <!-- Index.js Javascript file -->
+
+    <script src="./js/index.js"></script>
+
+    <!-- AOS Js -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            // offset:500
+            duration: 1000,
+            once: true
+        });
+
+        const config = {
+            type: 'carousel',
+            perView: 1,
+            autoplay: 5000 | true,
+            hoverpause: false,
+            animationDuration: 2000,
+        }
+
+        new Glide('.glide', config).mount();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,293 @@
+/* All the media queries for mobile & tablet both */
+
+@media only screen and (max-width: 1110px){
+    /* Navigation Bar */
+    header{
+        flex-direction: column;
+        padding: 30px;
+    }
+    
+    header .logo{
+        align-self: flex-start;
+        /* margin-left: 10px; */
+    }
+
+    .navbar{
+        width: 97%;
+        margin: auto;
+        display: none;
+        transition: all .4s ease-in-out;
+    }
+    
+    header .nav-links{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links li{
+        width: 100%;
+    }
+
+    .nav-links li a{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .burger{
+        display: block;
+    }
+    
+    #navbar.active{
+        display: block;
+        transition: all .4s ease-out;
+    }
+
+    .hero-section::before{
+        height: 600px;
+    }
+
+}
+
+/* According to padding set at the original website */
+
+/* @media screen and  (max-width: 760px) {
+    header{
+        padding: 20px 100px;
+    }
+}
+
+@media screen and  (max-width: 575px) {
+    header{
+        padding: 20px;
+    }
+} */
+
+@media only screen and (max-width: 800px){
+    
+    /* Hero Section */
+
+    .hero-section .hero-text{
+        font-size: 1.1rem;
+    }
+
+    .hero-section{
+        /* margin-left: 30px; */
+        margin-left: 10px;
+    }
+
+    /* .hero-section::before{
+        height: 600px;
+    } */
+
+    /* About Us section */
+
+    .about-container{
+        flex-direction: column;
+    }
+
+    .about-box{
+        width: 100%;
+        margin: 20px;
+        font-size: 1.4rem;
+    }
+
+    /* Why section */
+
+    .why-section{
+        grid-template-columns: 1fr;
+        grid-gap: 5rem;
+    }
+
+    .why-section-image{
+        order: 2;
+        width: 90%;
+    }
+
+    .why-section-text{
+        /* padding: 0 50px; */
+        padding: 0;
+    }
+
+    .why-section-text h1{
+        font-size: 2rem;
+    }
+
+    .why-section-text ul{
+        font-size: 1rem;
+    }
+
+    /* Features-section */
+
+    .features-section{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    /* Plans Section */
+
+    .plans-container{
+        grid-template-columns: .7fr;
+        justify-content: center;
+        margin: 0 10px;
+    }
+
+    .plans-section .text{
+        font-size: 1rem;
+    }
+
+    .plan .footer{
+        padding: 30px 0;
+    }
+
+    
+    /* Video Presentation Section */
+
+    .video-presentation-section .video-bg{
+        width: 80%;
+    }
+
+    /* Blogs Section */
+
+    .blogs-container{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .blog{
+        width: 95%;
+        margin: 10px;
+    }
+
+    .blog .blog-text{
+        padding: 10px;
+    }
+
+    /* Footer */
+
+    footer{
+        grid-template-columns: 1fr;
+        /* padding: 20px 40px; */
+        padding: 10px;
+    }
+
+    footer .line{
+        display: none;
+    }
+
+    .form-section{
+        justify-self: flex-start;
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 645px){
+
+    /* Hero Section */
+
+    .hero-section{
+        grid-template-columns: 1fr;
+        grid-gap: 5rem;
+    }
+
+    .hero-section::before{
+        height: 880px;
+    }
+
+    /* About Section */
+
+    .about-section h1{
+        font-size: 1.5rem;
+    }
+
+    .about-box{
+        font-size: 1rem;
+    }
+
+    /* Features Section */
+
+    .features{
+        flex-direction: column;
+    }
+
+    .feature-box{
+        width: 80%;
+    }
+
+    /* Testimonials Carousel Section */
+
+    .glide__slide{
+        padding: 0 40px;
+    }
+
+    .glide__arrow{
+        font-size: 1rem;
+    }
+
+    /* PLans Section */
+
+    .plans-container{
+        grid-template-columns: .9fr;
+    }
+
+    /* Blogs Section */
+
+    .blogs-section .heading{
+        font-size: 1rem;
+    }
+
+    /* Popup Contact Form */
+
+    .popup .content{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    /* *{
+        outline: 2px solid limegreen;
+    } */
+        /* Navigation Bar */
+        header{
+            padding: 10px 0;
+        }
+
+        .screenshots-section .text{
+            padding: 10px;
+        }
+
+        .screenshots-section .text h1{
+            font-size: .9rem;
+        }
+
+        .why-section-text-btn a{
+            padding: 20px 10px;
+            display: block;
+        }
+
+        .video-btn{
+            top: 15%;
+            left: 33%;
+            width: 40px;
+            height: 40px;
+            padding-top: 9px;
+            padding-left: 15px;
+        }
+
+        .blogs-section .btn{
+            margin: 50px 5px;
+        }
+
+        .blogs-section .btn a{
+            display: block;
+        }
+
+        .download-buttons a{
+            padding: 20px 5px;
+        }
+
+        .form-section .form{
+            width: 90%;
+            padding: 0;
+        }
+}
